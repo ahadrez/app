@@ -62,8 +62,8 @@ We will start to develop the  “th3” app on our local computer. git post rece
       7. spinnaker will start the blue/green deployment. 
           1. new replicaset e.g.    `app-v002 
           2. disable old reolcaiset  `app-v001
-          
-      
+         
+  *  [Blue/Green test results ](demo/demo_results)         
      
 
          
