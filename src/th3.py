@@ -10,7 +10,7 @@ from bottle import request, response, Bottle
 
 #__version__ = "0.0.1"
 
-APP_VERSION = os.getenv('APP_VERSION', '1')
+APP_VERSION = os.getenv('APP_VERSION', '2')
 
 TRANSLATIONS = {
     "Victory or Death": "Lok'Tar Ogar",
