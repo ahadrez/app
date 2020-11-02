@@ -1,122 +1,164 @@
-bash-5.0$ ./demo/test_endpoint.sh app.aljbali.com/version
+hadrez  staff   320 Nov  2 14:54 ..
+-rwxr-xr-x   1 ahadrez  staff  2950 Nov  2 14:58 th3.py
+drwxr-xr-x   3 ahadrez  staff    96 Nov  2 14:58 .
+(base) MacBook:src ahadrez$ git commit -am "updated th3 app to version 2"
+[main 10cec23] updated th3 app to version 2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+(base) MacBook:src ahadrez$ git push 
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 339 bytes | 339.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/ahadrez/app.git
+   6ac4b0b..10cec23  main -> main
+(base) MacBook:src ahadrez$ 
+
+###### testing app endpoint via  test_endpoint.sh script ###### 
+
+
+(base) MacBook:app ahadrez$ ./demo/test_endpoint.sh app.aljbali.com/version
 application end_point = app.aljbali.com/version
-Mon Nov  2 14:44:18 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:19 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:21 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:22 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:23 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:24 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:25 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:26 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:27 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:28 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:29 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:30 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:31 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:32 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:33 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:34 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:35 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:37 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:38 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:39 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:40 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:41 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:42 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:43 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:44 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:45 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:46 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:47 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:48 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:49 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:50 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:51 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:53 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:54 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:55 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:56 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:57 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:58 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:44:59 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:00 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:01 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:02 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:03 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:04 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:05 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:07 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:08 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:09 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:10 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:11 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:12 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:13 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:14 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:15 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:16 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:17 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:18 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:19 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:21 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:22 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:23 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:24 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:25 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:26 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:27 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:28 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:29 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:30 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:31 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:32 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:33 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:34 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:36 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:37 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:38 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:39 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:40 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:41 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:42 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:43 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:44 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:45 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:45:46 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:47 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:48 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:45:49 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:50 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:45:52 PST 2020
-{"version": "1", "errors": []}Mon Nov  2 14:45:53 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:45:54 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:45:55 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:01 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:02 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:03 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:04 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:05 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:07 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:08 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:09 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:10 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:11 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:12 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:13 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:14 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:15 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:16 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:17 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:18 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:19 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:20 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:21 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:23 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:24 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:25 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:26 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:27 PST 2020
-{"version": "2", "errors": []}Mon Nov  2 14:46:28 PST 2020
+Mon Nov  2 14:58:49 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:58:50 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:58:51 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:58:52 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:58:53 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:58:54 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:58:55 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:58:56 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:58:57 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:58:58 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:58:59 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:00 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:02 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:03 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:04 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:05 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:06 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:07 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:08 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:09 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:10 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:11 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:12 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:13 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:14 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:15 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:16 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:18 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:19 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:20 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:21 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:22 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:23 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:24 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:25 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:26 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:27 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:28 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:30 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:31 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:32 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:33 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:34 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:35 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:36 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:37 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:38 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:39 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:40 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:41 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:42 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:44 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:45 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:46 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:47 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:48 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:49 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:50 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:51 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:52 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 14:59:53 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:54 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:55 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 14:59:56 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 14:59:57 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 14:59:58 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:00 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 15:00:01 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 15:00:02 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:03 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:04 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 15:00:05 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 15:00:06 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:07 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:08 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 15:00:09 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 15:00:10 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:11 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:12 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 15:00:13 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 15:00:15 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:16 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:17 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 15:00:18 PST 2020
+{"version": "1", "errors": []}Mon Nov  2 15:00:19 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:20 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:21 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:22 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:23 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:24 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:25 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:26 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:27 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:28 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:29 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:31 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:32 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:33 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:34 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:35 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:36 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:37 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:38 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:39 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:40 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:41 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:42 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:43 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:44 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:45 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:47 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:48 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:49 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:50 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:51 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:52 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:53 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:54 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:55 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:56 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:57 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:58 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:00:59 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:01:00 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:01:02 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:01:03 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:01:04 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:01:05 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:01:06 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:01:07 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:01:08 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:01:09 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:01:10 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:01:11 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:01:12 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:01:13 PST 2020
+{"version": "2", "errors": []}Mon Nov  2 15:01:14 PST 2020
 {"version": "2", "errors": []}^C
-bash-5.0$ 
+(base) MacBook:app ahadrez$ 
+
 
