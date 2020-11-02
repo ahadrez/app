@@ -1,0 +1,33 @@
+clone: 
+  skip_verify: true
+  
+kind: pipeline
+name: default
+
+workspace:
+  path: src/github.com/app
+
+steps:
+#- name: build
+#  image: python:3.8-alpine3.11
+#  commands:
+#  - pip install -r requirements.txt
+
+- name: build-docker
+  image: plugins/docker
+  settings:
+    repo: 10.195.252.113:5000/${DRONE_REPO_NAME}
+    registry: 10.195.252.113:5000
+    insecure: true
+    auto_tag: true
+    tags: 
+      - ${DRONE_TAG}
+      
+- name: webhook
+  image: plugins/webhook
+  settings:
+    content_type: application/json
+    urls: http://spinnaker-gate.aljbali.com/webhooks/webhook/app
+    debug: true      
+      
+

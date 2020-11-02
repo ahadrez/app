@@ -1,0 +1,187 @@
+{
+  "keepWaitingPipelines": false,
+  "lastModifiedBy": "anonymous",
+  "limitConcurrent": true,
+  "parameterConfig": [
+    {
+      "default": "app",
+      "description": "",
+      "hasOptions": false,
+      "label": "",
+      "name": "service_name",
+      "options": [
+        {
+          "value": ""
+        }
+      ],
+      "pinned": false,
+      "required": true
+    },
+    {
+      "default": "latest",
+      "description": "",
+      "hasOptions": false,
+      "label": "",
+      "name": "service_version",
+      "options": [
+        {
+          "value": ""
+        }
+      ],
+      "pinned": false,
+      "required": false
+    },
+    {
+      "default": "demo",
+      "description": "",
+      "hasOptions": false,
+      "label": "",
+      "name": "namespace",
+      "options": [
+        {
+          "value": ""
+        }
+      ],
+      "pinned": false,
+      "required": false
+    }
+  ],
+  "spelEvaluator": "v4",
+  "stages": [
+    {
+      "account": "config",
+      "cloudProvider": "kubernetes",
+      "manifests": [
+        {
+          "apiVersion": "v1",
+          "kind": "Service",
+          "metadata": {
+            "name": "${parameters.service_name}",
+            "namespace": "${ parameters.namespace }"
+          },
+          "spec": {
+            "ports": [
+              {
+                "port": 80,
+                "protocol": "TCP"
+              }
+            ],
+            "selector": {
+              "frontedBy": "${parameters.service_name}"
+            }
+          }
+        },
+        {
+          "apiVersion": "apps/v1",
+          "kind": "ReplicaSet",
+          "metadata": {
+            "annotations": {
+              "strategy.spinnaker.io/max-version-history": "2",
+              "traffic.spinnaker.io/load-balancers": "[\"service ${parameters.service_name}\"]"
+            },
+            "labels": {
+              "group": "${parameters.service_name}"
+            },
+            "name": "${parameters.service_name}",
+            "namespace": "${ parameters.namespace }"
+          },
+          "spec": {
+            "replicas": 2,
+            "selector": {
+              "matchLabels": {
+                "group": "${parameters.service_name}"
+              }
+            },
+            "template": {
+              "metadata": {
+                "labels": {
+                  "group": "${parameters.service_name}"
+                }
+              },
+              "spec": {
+                "containers": [
+                  {
+                    "image": "10.195.252.113:5000/${parameters.service_name}:${parameters.service_version}",
+                    "name": "${parameters.service_name}"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "apiVersion": "extensions/v1beta1",
+          "kind": "Ingress",
+          "metadata": {
+            "labels": {
+              "service_name": "${parameters.service_name}",
+              "service_version": "${parameters.service_version}"
+            },
+            "name": "${ parameters.service_name }",
+            "namespace": "${ parameters.namespace }"
+          },
+          "spec": {
+            "rules": [
+              {
+                "host": "${ parameters.service_name}.aljbali.com",
+                "http": {
+                  "paths": [
+                    {
+                      "backend": {
+                        "serviceName": "${parameters.service_name}",
+                        "servicePort": 80
+                      },
+                      "path": "/"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "status": {
+            "loadBalancer": {}
+          }
+        }
+      ],
+      "moniker": {
+        "app": "demo"
+      },
+      "name": "Deploy (Manifest)",
+      "refId": "1",
+      "requisiteStageRefIds": [],
+      "skipExpressionEvaluation": false,
+      "source": "text",
+      "trafficManagement": {
+        "enabled": false,
+        "options": {
+          "enableTraffic": false
+        }
+      },
+      "type": "deployManifest"
+    },
+    {
+      "account": "config",
+      "app": "demo",
+      "cloudProvider": "kubernetes",
+      "cluster": "replicaSet app",
+      "criteria": "second_newest",
+      "kind": "replicaSet",
+      "location": "demo",
+      "mode": "dynamic",
+      "name": "Disable (Manifest)",
+      "refId": "2",
+      "requisiteStageRefIds": [
+        "1"
+      ],
+      "type": "disableManifest"
+    }
+  ],
+  "triggers": [
+    {
+      "enabled": true,
+      "source": "app",
+      "type": "webhook"
+    }
+  ],
+  "updateTs": "1604343892311"
+}
