@@ -1,6 +1,6 @@
 # Kubernetes blue green deployments 
 
-This report holds workflow that allows you to perform blue/green deployments on a Kubernetes cluster.
+This repo holds workflow that allows you to perform blue/green deployments on a Kubernetes cluster.
 
 # Prerequisites/Infrastrcture 
 infrastrcutre setup is outside the scopre of this demo. 
