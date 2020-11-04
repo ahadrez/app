@@ -31,9 +31,9 @@ Deployed the following on the GKE cluster.
   
 -  Spinnaker CD pipeline. 
    *  [spinnaker pipeline](resources/spinnaker-pipeline.json) 
-      - created a simple spinnaker pipeline to deploy the th3 app using spinnaker native blue/green deployment.
-      1. deploy stage.  create Kubernetes resources ( replicaset, service, ingress ) - (resources/deployment.yml) 
-      2. disbale stage. this step is needed to disable the "second newest replicaset"  so it doesn't route requests to it. 
+      -  created a simple spinnaker pipeline to deploy the th3 app using spinnaker native blue/green deployment.
+      -  deploy stage.  create Kubernetes resources ( replicaset, service, ingress ) - (resources/deployment.yml) 
+      -  disbale stage. this step is needed to disable the "second newest replicaset"  so it doesn't route requests to it. 
          more info: https://spinnaker.io/guides/user/kubernetes-v2/traffic-management/#caveats
     
 # Example Scenario/Demo. 
