@@ -16,7 +16,7 @@ Deployed the following on the GKE cluster.
    - Deployed private docker registry
    - Deployed Drone server. http://drone.aljbali.com   (integrated with https://github.com/ahadrez
    - Deployed Spinnaker. http://spinnaker.aljbali.com  (  persisted with  GCS storage) 
-   - Setup Custome domain/DNS ( www.aljbali.com ) 
+   - Setup Custom domain/DNS ( www.aljbali.com ) 
    
  
 # Deployment workflow. 
