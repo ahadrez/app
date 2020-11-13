@@ -16,7 +16,7 @@ steps:
 - name: build-docker
   image: plugins/docker
   settings:
-    repo: 10.4.3.174:5000/${DRONE_REPO_NAME}:${DRONE_TAG}
+    repo: 10.4.3.174:5000/${DRONE_REPO_NAME}
     registry: 10.4.3.174:5000
     insecure: true
     auto_tag: true
